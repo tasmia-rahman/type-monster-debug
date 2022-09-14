@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1 class="text-center my-5">Blog</h1>
+        <div class="container mx-5 px-5">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Difference between localStorage and sessionStorage?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The one major difference between localStorage and sessionStorage is the expiration date.
+                            localStorage persists the storage across browser sessions. So even if the domain is opened
+                            in a new tab, or the browser is closed and reopened, the storage is saved. There is no
+                            expiration. sessionStorage is cleared when the page session ends. A page session lasts as
+                            long as the tab or the browser is open. Therefore, when you open a new tab or a new window,
+                            this creates a new session and new storage.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Difference between block scope and global scope?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            There's only one Global scope in the JavaScript document. The area outside all the functions
+                            is consider the global scope and the variables defined inside the global scope can be
+                            accessed and altered in any other scopes.A block scope is the area within if, switch
+                            conditions or for and while loops. Generally speaking, whenever you see {curly brackets}, it
+                            is a block. In ES6, const and let keywords allow developers to declare variables in the
+                            block scope, which means those variables exist only within the corresponding block.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is event loop in JavaScript?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The event loop is what allows javascript to handle thousands and thousands of requests with
+                            just a single thread. This architecture allows Javascript and/or Node.js engines to offload
+                            operations to the system kernel. To explain it in different terms, the event loop will wait
+                            until all blocking/synchronous code is done and then add asynchronous calls into the call
+                            stack. This simple architectural approach is what allows javascript to handle way more
+                            requests than the traditional multi-threaded synchronous approach.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How many ways undefined can be achieved?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The undefined is a primitive type in JavaScript. So the undefined is a type. And the
+                            undefined type has exactly one value that is undefined. When you declare a variable and
+                            don’t initialize it to a value, the variable will have a value of undefined. If you access a
+                            non-existing property of an object, you’ll get undefined. When you call a function with a
+                            number of parameters, you often pass the same number of arguments.A function that doesn’t
+                            have a return statement implicitly returns undefined. When you access an array element that
+                            is out-of-bounds, you’ll get the undefined value.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
